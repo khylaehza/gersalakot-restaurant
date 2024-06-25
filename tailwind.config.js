@@ -1,18 +1,32 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
-  },
-  plugins: [],
+	content: [
+		'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
+		'./src/app/**/*.{js,ts,jsx,tsx,mdx}',
+	],
+	theme: {
+		extend: {
+			fontFamily: {
+				'crimson-pro': ['Crimson Pro', 'serif'],
+				outfit: ['Outfit', 'sans-serif'],
+				goudy: ['Sorts Mill Goudy', 'serif'],
+			},
+			boxShadow: {
+				custom: '2px 4px 20px 4px rgba(0, 0, 0, 0.25)',
+				btn: '1px 1px 10px 0px rgba(101, 110, 73, 0.5)',
+				'btn-primary': '1px 1px 8px 0px rgba(0, 0, 0, 0.25)',
+			},
+		},
+		colors: {
+			transparent: 'transparent',
+			current: 'currentColor',
+			primary: '#4B5234',
+			'accent-25': 'rgba(193, 191, 81, 0.25)',
+			secondary: '#EDEDED',
+			white: '#FFF',
+			dark: '#000',
+		},
+	},
+	plugins: [],
 };

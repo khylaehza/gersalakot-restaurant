@@ -1,12 +1,14 @@
-import Image from 'next/image';
-import { Home, Menu, Services, Contact } from './sections';
+import { Hero, Menu, Services, Contact } from './sections';
+import 'tailwindcss/tailwind.css';
+import './globals.css';
 export default function Index() {
 	return (
-		<main className='flex min-h-screen flex-col items-center justify-between p-24'>
-			<Home />
-			<Menu />
+		<main>
+			<Hero />
+			{/* <Menu />
 			<Services />
-			<Contact />
+			<Contact /> */}
+			
 		</main>
 	);
 }
