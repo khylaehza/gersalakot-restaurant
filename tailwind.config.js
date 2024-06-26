@@ -16,6 +16,7 @@ module.exports = {
 				custom: '2px 4px 20px 4px rgba(0, 0, 0, 0.25)',
 				btn: '1px 1px 10px 0px rgba(101, 110, 73, 0.5)',
 				'btn-primary': '1px 1px 8px 0px rgba(0, 0, 0, 0.25)',
+				cards: '0px 0px 20px 1px rgba(101, 110, 73, 0.1)',
 			},
 		},
 		colors: {
@@ -25,7 +26,10 @@ module.exports = {
 			'accent-25': 'rgba(193, 191, 81, 0.25)',
 			secondary: '#EDEDED',
 			white: '#FFF',
+			'white-50': 'rgba(255, 255, 255, 0.50)',
 			dark: '#000',
+			'primary-75': 'rgba(75, 82, 52, 0.75)',
+			'primary-25': 'rgba(75, 82, 52, 0.25)',
 		},
 	},
 	plugins: [],

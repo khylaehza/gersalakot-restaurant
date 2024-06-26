@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 					<link
 						rel='preconnect'
 						href='https://fonts.gstatic.com'
-						crossorigin
+						crossOrigin='true'
 					/>
 					<link
 						href='https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap'

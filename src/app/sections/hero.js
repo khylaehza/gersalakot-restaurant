@@ -102,7 +102,7 @@ export default function Hero() {
 							</ul>
 						</nav>
 					</div>
-					<div class='w-4/5 mx-auto border-t-[1px] border-accent-25 mt-5 hidden md:block'></div>
+					<div className='w-4/5 mx-auto border-t-[1px] border-accent-25 mt-5 hidden md:block'></div>
 				</header>
 				<div
 					className={`relative h-full px-6 sm:px-10 py-2 md:py-0 md:px-24 xl:px-40 2xl:px-48 flex flex-col justify-center ${openNav ? 'hidden' : 'block'}`}

@@ -5,10 +5,10 @@ export default function Index() {
 	return (
 		<main>
 			<Hero />
+			<Menu />
 			{/* <Menu />
 			<Services />
 			<Contact /> */}
-			
 		</main>
 	);
 }
