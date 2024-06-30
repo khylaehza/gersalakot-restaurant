@@ -16,7 +16,7 @@ module.exports = {
 				custom: '2px 4px 20px 4px rgba(0, 0, 0, 0.25)',
 				btn: '1px 1px 10px 0px rgba(101, 110, 73, 0.5)',
 				'btn-primary': '1px 1px 8px 0px rgba(0, 0, 0, 0.25)',
-				cards: '0px 0px 20px 1px rgba(101, 110, 73, 0.1)',
+				cards: '0px 0px 14px 0px rgba(101, 110, 73, 0.1)',
 			},
 		},
 		colors: {
