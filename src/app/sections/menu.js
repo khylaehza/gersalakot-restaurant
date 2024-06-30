@@ -18,8 +18,8 @@ const Card = ({ food }) => {
 				/>
 			</div>
 			<div className='h-1/8 pt-0 p-6 font-crimson-pro flex text-left w-full flex-col gap-2'>
-				<div className='font-medium '>{food.name}</div>
-				<div className='text-sm'>{food.desc}</div>
+				<div className='font-medium xl:text-lg'>{food.name}</div>
+				<div className='text-sm xl:text-base'>{food.desc}</div>
 			</div>
 		</div>
 	);
@@ -97,10 +97,10 @@ export default function Menu() {
 			className='bg-secondary relative w-full h-screen py-8 px-4 text-dark flex align-center items-center text-center flex-col gap-4 justify-center'
 		>
 			<div>
-				<div className='font-outfit text-sm '>
+				<div className='font-outfit text-sm xl:text-lg'>
 					GER SALAKOT RESTAURANT
 				</div>
-				<div className='font-goudy font-semibold text-lg '>
+				<div className='font-goudy font-semibold text-lg  xl:text-2xl'>
 					Popular Menu
 				</div>
 			</div>
