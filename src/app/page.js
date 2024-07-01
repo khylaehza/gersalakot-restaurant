@@ -6,8 +6,8 @@ export default function Index() {
 		<main>
 			<Hero />
 			<Menu />
-			{/* <Menu />
 			<Services />
+			{/* <Menu />
 			<Contact /> */}
 		</main>
 	);
