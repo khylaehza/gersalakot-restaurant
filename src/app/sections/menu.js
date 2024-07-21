@@ -3,11 +3,11 @@ import { useState, useEffect } from 'react';
 
 const Card = ({ food }) => {
 	return (
-		<div className='block rounded-lg p-0 shadow-cards w-full h-full flex flex-col items-center bg-white transition-transform duration-500 ease-in-out transform'>
+		<div className='block rounded-lg p-1 shadow-cards w-full h-full flex flex-col items-center bg-white transition-transform duration-500 ease-in-out transform'>
 			<div className='relative w-full  flex flex-1 items-center justify-center overflow-hidden '>
 				<img
 					src={'/plate.jpg'}
-					className={'w-full absolute object-cover z-0'}
+					className={'w-full relative object-cover z-0'}
 				/>
 
 				<img
@@ -94,7 +94,7 @@ export default function Menu() {
 	return (
 		<section
 			id='menu'
-			className='bg-secondary relative w-full h-screen py-8 px-4 text-dark flex align-center items-center text-center flex-col gap-4 justify-center'
+			className='bg-secondary relative w-full py-8 px-4 text-dark flex align-center items-center text-center flex-col gap-4 justify-center'
 		>
 			<div>
 				<div className='font-outfit text-sm xl:text-lg'>

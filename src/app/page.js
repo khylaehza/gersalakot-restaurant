@@ -7,8 +7,7 @@ export default function Index() {
 			<Hero />
 			<Menu />
 			<Services />
-			{/* <Menu />
-			<Contact /> */}
+			<Contact />
 		</main>
 	);
 }
