@@ -6,6 +6,14 @@ export const metadata = {
 	title: 'Ger Salakot Restaurant | Authentic Filipino Cuisine at Canada',
 	description:
 		'Discover the flavors of the Philippines at Ger Salakot Restaurant, located at 737 Keewatin St., Winnipeg, Manitoba, Canada. Indulge in traditional Filipino dishes in the Philippine Canadian Centre of Manitoba (PCCM).',
+	og: {
+		title: 'Ger Salakot Restaurant | Authentic Filipino Cuisine in Canada',
+		description:
+			'Experience authentic Filipino cuisine at Ger Salakot Restaurant in Canada.',
+		image: 'https://gersalakot-restaurant.vercel.app/preview.png',
+		url: 'https://gersalakot-restaurant.vercel.app/',
+		type: 'website',
+	},
 };
 
 export default function RootLayout({ children }) {
@@ -13,24 +21,24 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<head>
 				<meta
-					property='og:title'
-					content='Ger Salakot Restaurant | Authentic Filipino Cuisine in Canada'
-				/>
-				<meta
-					property='og:description'
-					content='Experience authentic Filipino cuisine at Ger Salakot Restaurant in Canada.'
-				/>
-				<meta
-					property='og:image'
-					content='https://gersalakot-restaurant.vercel.app/preview.png'
+					property='og:type'
+					content='website'
 				/>
 				<meta
 					property='og:url'
 					content='https://gersalakot-restaurant.vercel.app/'
 				/>
 				<meta
-					property='og:type'
-					content='website'
+					property='og:title'
+					content='Ger Salakot Restaurant | Authentic Filipino Cuisine at Canada'
+				/>
+				<meta
+					property='og:description'
+					content='Discover the flavors of the Philippines at Ger Salakot Restaurant, located at 737 Keewatin St., Winnipeg, Manitoba, Canada. Indulge in traditional Filipino dishes in the Philippine Canadian Centre of Manitoba (PCCM).'
+				/>
+				<meta
+					property='og:image'
+					content='https://metatags.io/images/meta-tags.png'
 				/>
 				<link
 					rel='preconnect'
