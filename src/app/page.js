@@ -1,7 +1,7 @@
 'use client';
 import { Hero, Menu, Services, Contact } from './sections';
 import { useEffect } from 'react';
-import 'tailwindcss/tailwind.css';
+
 import './globals.css';
 
 export default function Index() {
