@@ -45,7 +45,7 @@ export default function Hero() {
 			</div>
 			<div className={'relative flex flex-col w-full justify-between '}>
 				<header
-					className={`relative flex flex-col font-crimson-pro text-xl m-3 md:h-32 ${openNav ? 'h-full' : 'h-2'}`}
+					className={`relative flex flex-col font-crimson-pro text-xl m-3 md:h-32 ${openNav ? 'h-2' : 'h-2'}`}
 				>
 					<div className='flex flex-row'>
 						<div className='basis-1/5' />

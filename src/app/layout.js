@@ -13,9 +13,25 @@ export default function RootLayout({ children }) {
 		<html lang='en'>
 			<head>
 				<meta
+					property='og:title'
+					content='Ger Salakot Restaurant | Authentic Filipino Cuisine in Canada'
+				/>
+				<meta
+					property='og:description'
+					content='Experience authentic Filipino cuisine at Ger Salakot Restaurant in Canada.'
+				/>
+				<meta
 					property='og:image'
-					content='https://gersalakot-restaurant.vercel.app/preview.png'
-				></meta>
+					content='/preview.png'
+				/>
+				<meta
+					property='og:url'
+					content='https://gersalakot-restaurant.vercel.app/'
+				/>
+				<meta
+					property='og:type'
+					content='website'
+				/>
 				<link
 					rel='preconnect'
 					href='https://fonts.googleapis.com'
