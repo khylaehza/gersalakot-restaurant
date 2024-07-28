@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
 				/>
 				<meta
 					property='og:image'
-					content='https://metatags.io/images/meta-tags.png'
+					content='https://gersalakot-restaurant.vercel.app/preview.png'
 				/>
 				<link
 					rel='preconnect'
