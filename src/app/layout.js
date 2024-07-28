@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
 				/>
 				<meta
 					property='og:image'
-					content='/preview.png'
+					content='https://gersalakot-restaurant.vercel.app/preview.png'
 				/>
 				<meta
 					property='og:url'
