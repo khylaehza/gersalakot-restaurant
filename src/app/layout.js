@@ -12,6 +12,10 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<head>
+				<meta
+					property='og:image'
+					content='https://gersalakot-restaurant.vercel.app/preview.png'
+				></meta>
 				<link
 					rel='preconnect'
 					href='https://fonts.googleapis.com'

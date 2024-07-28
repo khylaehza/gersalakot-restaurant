@@ -208,10 +208,10 @@ export default function Hero() {
 						</div>
 						<div className='mt-1 flex flex-row gap-4 font-outfit xs:text-xs text-lg md:text-sm'>
 							<button className='bg-primary text-white rounded-xl shadow-btn-primary font-medium w-1/2 sm:w-36 p-2'>
-								ORDER NOW
+								<Link href={'#contact'}>ORDER NOW</Link>
 							</button>
 							<button className='bg-white text-dark p-2 rounded-xl shadow-btn w-1/2 sm:w-36'>
-								VIEW MENU
+								<Link href={'#menu'}>VIEW MENU</Link>
 							</button>
 						</div>
 					</div>
