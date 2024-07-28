@@ -10,25 +10,33 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 	return (
-		<>
-			<html lang='en'>
-				<head>
-					<link
-						rel='preconnect'
-						href='https://fonts.googleapis.com'
-					/>
-					<link
-						rel='preconnect'
-						href='https://fonts.gstatic.com'
-						crossOrigin='true'
-					/>
-					<link
-						href='https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap'
-						rel='stylesheet'
-					/>
-				</head>
-				<body className={inter.className}>{children}</body>
-			</html>
-		</>
+		<html lang='en'>
+			<head>
+				<meta charSet='UTF-8' />
+				<meta
+					name='viewport'
+					content='width=device-width, initial-scale=1.0'
+				/>
+				<title>{metadata.title}</title>
+				<meta
+					name='description'
+					content={metadata.description}
+				/>
+				<link
+					rel='preconnect'
+					href='https://fonts.googleapis.com'
+				/>
+				<link
+					rel='preconnect'
+					href='https://fonts.gstatic.com'
+					crossOrigin='true'
+				/>
+				<link
+					href='https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Outfit:wght@100..900&family=Sorts+Mill+Goudy:ital@0;1&display=swap'
+					rel='stylesheet'
+				/>
+			</head>
+			<body className={inter.className}>{children}</body>
+		</html>
 	);
 }

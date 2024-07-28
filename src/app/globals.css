@@ -1,7 +1,38 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+	background-color: #4b5234;
+}
+
+body {
+	opacity: 0;
+	transform: translateY(20px);
+	transition:
+		opacity 1s ease-out,
+		transform 1s ease-out;
+}
+
+body.page-loaded {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+section {
+	transition:
+		opacity 1s ease-out,
+		transform 1s ease-out;
+}
+
+section.in-view {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/*
 :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
@@ -18,7 +49,7 @@
 
 body {
 	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(to bottom, transparent, #4b5234) #ededed;
+	 background: linear-gradient(to bottom, transparent, #4b5234) #ededed; 
 }
 
 @layer utilities {
@@ -26,3 +57,4 @@ body {
 		text-wrap: balance;
 	}
 }
+*/

@@ -7,6 +7,14 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			screens: {
+				xs: { max: '376px' },
+				sm: { min: '640px' },
+				md: { min: '768px' },
+				lg: { min: '1024px' },
+				xl: { min: '1280px' },
+				'2xl': { min: '1536px' },
+			},
 			fontFamily: {
 				'crimson-pro': ['Crimson Pro', 'serif'],
 				outfit: ['Outfit', 'sans-serif'],
@@ -30,6 +38,7 @@ module.exports = {
 			dark: '#000',
 			'primary-75': 'rgba(75, 82, 52, 0.75)',
 			'primary-25': 'rgba(75, 82, 52, 0.25)',
+			accent: '#C1BF51',
 		},
 	},
 	plugins: [],

@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const Card = ({ food }) => {
 	return (
@@ -18,14 +18,35 @@ const Card = ({ food }) => {
 				/>
 			</div>
 			<div className='h-1/8 pt-0 p-6 font-crimson-pro flex text-left w-full flex-col gap-2'>
-				<div className='font-medium xl:text-lg'>{food.name}</div>
-				<div className='text-sm xl:text-base'>{food.desc}</div>
+				<div className='font-medium xs:text-sm text-2xl md:text-xl'>
+					{food.name}
+				</div>
+				<div className='xs:text-sm text-xl md:text-lg'>{food.desc}</div>
 			</div>
 		</div>
 	);
 };
 
 export default function Menu() {
+	const sectionRef = useRef(null);
+	useEffect(() => {
+		const handleScroll = () => {
+			if (sectionRef.current) {
+				const rect = sectionRef.current.getBoundingClientRect();
+				if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+					sectionRef.current.classList.add('in-view');
+				} else {
+					sectionRef.current.classList.remove('in-view');
+				}
+			}
+		};
+
+		window.addEventListener('scroll', handleScroll);
+		handleScroll();
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
+
 	const foods = [
 		{
 			name: 'Pancit Bihon',
@@ -94,13 +115,14 @@ export default function Menu() {
 	return (
 		<section
 			id='menu'
-			className='bg-secondary relative w-full py-8 px-4 text-dark flex align-center items-center text-center flex-col gap-4 justify-center'
+			ref={sectionRef}
+			className='bg-secondary relative w-full py-8 px-4 text-dark flex align-center items-center text-center flex-col gap-4 justify-center h-screen transition-opacity duration-500 ease-in-out opacity-100'
 		>
 			<div>
-				<div className='font-outfit text-sm xl:text-lg'>
+				<div className='font-outfit xs:text-sm text-lg xl:text-xl'>
 					GER SALAKOT RESTAURANT
 				</div>
-				<div className='font-goudy font-semibold text-lg  xl:text-2xl'>
+				<div className='font-goudy font-semibold xs:text-lg text-3xl  xl:text-3xl'>
 					Popular Menu
 				</div>
 			</div>
